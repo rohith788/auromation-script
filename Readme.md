@@ -2,10 +2,6 @@
 
 Setup AWS credintials : https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html
 
-export AWS_ACCESS_KEY_ID=AKIASV4AVPBOVRXIHZWC
-export AWS_SECRET_ACCESS_KEY=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
-export AWS_REGION="us-east-2"
-
 ## Set up python dependencies
     >btot3
     >pip3/pip install pyyaml
