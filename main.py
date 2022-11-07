@@ -106,6 +106,11 @@ class Solution:
         print(f"Your instance is ready")
         print("instance ID:", self.inst_wrapper.instance.id)
 
+        print("Run this to shh into the instance:")
+
+        print('ssh -i "{}.pem" {}@{}'.format(user1_name, user1_name, self.inst_wrapper.instance.public_ip_address))
+        print('ssh -i "{}.pem" {}@{}'.format(user2_name, user2_name, self.inst_wrapper.instance.public_ip_address))
+
     def cleanup(self):
         self.inst_wrapper.terminate()
         print("Deleted instance.")
@@ -129,7 +134,7 @@ if __name__ == '__main__':
     server_config.pop('volumes', None)
     server_config.pop('users', None)
     #intiate the class
-    sol = Solution('isnt-sg-group1', server_config, disk_config, user_config)  
+    sol = Solution('isnt-sg-group2', server_config, disk_config, user_config)  
     #call the functions
     sol.create_security_group()#create the security group
     sol.create_instance()#create the EC2 insstance
