@@ -2,8 +2,6 @@
 
 Setup AWS credintials : https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html
 
-
-
 ## Set up python dependencies
     >btot3
     >pip3/pip install pyyaml
