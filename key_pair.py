@@ -28,7 +28,8 @@ class KeyPairWrapper:
             #save the key pair to local machine
             private_key_file=open(f'{self.key_pair.name}.pem',"w")
             private_key_file.write(self.key_pair.key_material)
-            private_key_file.close
+            private_key_file.close()
+            os.chmod(f'{self.key_pair.name}.pem', 0o600)#setting the permission of the private key file
         except ClientError as err: #error if the key cannot be created
             logger.error(
                 "Couldn't create key %s. Here's why: %s: %s", key_name,
