@@ -26,6 +26,8 @@ class KeyPairWrapper:
             with open(self.key_file_path, 'w') as key_file:
                 key_file.write(self.key_pair.key_material) #opening and writing the key
             #save the key pair to local machine
+            if os.path.isfile(f'{self.key_pair.name}.pem'): # if the key file already exists, delete
+                os.remove(f'{self.key_pair.name}.pem')
             private_key_file=open(f'{self.key_pair.name}.pem',"w")
             private_key_file.write(self.key_pair.key_material)
             private_key_file.close()

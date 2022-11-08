@@ -134,7 +134,7 @@ if __name__ == '__main__':
     server_config.pop('volumes', None)
     server_config.pop('users', None)
     #intiate the class
-    sol = Solution('isnt-sg-group2', server_config, disk_config, user_config)  
+    sol = Solution('isnt-sg-group', server_config, disk_config, user_config)  
     #call the functions
     sol.create_security_group()#create the security group
     sol.create_instance()#create the EC2 insstance
