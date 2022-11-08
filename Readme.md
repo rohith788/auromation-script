@@ -50,3 +50,5 @@ Install the dependecies necessary for this projet using the code below. Use "pip
 ### Notes
 
 * If you you encounter any errors reagarding the AWS credentials once you run the script, make sure you entered the correct credentials in the first part of this document.
+
+* Sometime, the users might not be ready to login to immediately. So if you face a permission denied error, try again after a few minutes. 
