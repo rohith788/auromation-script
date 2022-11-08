@@ -31,10 +31,8 @@ class Solution:
             IncludePublicKey=True
             )
         public_key = "" 
-        print(key['KeyPairs'][0]['PublicKey'])
         for key in key['KeyPairs']: #returve the public key to add to user
             if key['KeyName'] == key_name: public_key = key['PublicKey']
-        print(public_key)
         return public_key
 
     #create a sercurity group
