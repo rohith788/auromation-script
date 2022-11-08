@@ -7,10 +7,15 @@ Although you can create an IAM user with the necessary permissions for this exce
 
 1) Open the IAM Dashboard and click on the "Manage access  keys" for the root userm as shown in the image below.
 
+![alt text](https://github.com/rohith788/fetchreewards_devops/blob/main/asset/asses1.png)
+
 2)In the Access Keys tab in the next screen, click on the "Create New Access Key" button.
+
+![alt text](https://github.com/rohith788/fetchreewards_devops/blob/main/asset/asses2.png)
 
 3) The popup menu will have the Access Key and the Secret Key. You can also download this information in a .csv file with the "Download Key File"
 
+![alt text](https://github.com/rohith788/fetchreewards_devops/blob/main/asset/asses3.png)
 
 You can follow the instructions on the link below to set up the AWS credentials on your local machine.(make sure you get the credentials for the root user): https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html
 
@@ -44,9 +49,15 @@ Install the dependecies necessary for this projet using the code below. Use "pip
 5) Once ssh-ed into the User account, you can view the volumes attached and mounted to the instance with the following command
 
         ldblk
+        
+![alt text](https://github.com/rohith788/fetchreewards_devops/blob/main/asset/disks.png)
 
 6) You can change the configuration for the instance and other details by making changes to the config.yaml file. But, make sure you only make changes to the values and not the keys.
 
 ### Notes
 
 * If you you encounter any errors reagarding the AWS credentials once you run the script, make sure you entered the correct credentials in the first part of this document.
+
+* Sometime, the users might not be ready to login to immediately. So if you face a permission denied error, try again after a few minutes. 
+
+![alt text](https://github.com/rohith788/fetchreewards_devops/blob/main/asset/login.png)
