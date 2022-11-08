@@ -62,3 +62,4 @@ Install the dependecies necessary for this projet using the code below. Use "pip
 
 ![alt text](https://github.com/rohith788/fetchreewards_devops/blob/main/asset/login.png)
 
+* I've tested this script on windows and ubuntu only. 
