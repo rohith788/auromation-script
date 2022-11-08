@@ -5,7 +5,7 @@ https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/setup-credentials.
 
 Although you can create an IAM user with the necessary permissions for this excercise adn use its credentials. I am using the root user credentials here. These are the instructions to user that.
 
-1) Open the IAM Dashboard and click on the "Manage access  keys" for the root userm as shown in the image below.
+1) Open the [IAM Dashboard](https://us-east-1.console.aws.amazon.com/iamv2/home#/home) and click on the "Manage access  keys" for the root userm as shown in the image below.
 
 ![alt text](https://github.com/rohith788/fetchreewards_devops/blob/main/asset/asses1.png)
 
