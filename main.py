@@ -69,8 +69,11 @@ class Solution:
             sudo mkdir /home/user2/.ssh
             sudo touch /home/user2/.ssh/authorized_keys
             sudo echo %(key2)s > /home/user2/.ssh/authorized_keys
+            sudo chmod 777 %(mount_path)s
+            sudo chmod 777 %(mount_path2)s
             """ % {'disk_name': self.disk_config[1]['device'],
                 'mount_path': self.disk_config[1]['mount'],
+                'mount_path2': self.disk_config[0]['mount'],
                 'user1_name': user1_name, 'key1': user1_key,
                 'user2_name': user2_name, 'key2': user2_key}
 
