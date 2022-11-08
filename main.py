@@ -1,4 +1,5 @@
-import logging
+# Some of the classes in this project is inspired from https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/python/example_code/ec2
+
 import urllib.request
 import sys
 import time
