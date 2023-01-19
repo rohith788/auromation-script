@@ -1,4 +1,4 @@
-# Fetch Rewards DevOps take home
+# Boto 3 script
 
 You can create the credintials(access key and secret key) by following the instructions here : 
 https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/setup-credentials.html.
